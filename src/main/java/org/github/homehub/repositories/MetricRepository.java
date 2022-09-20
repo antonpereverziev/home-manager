@@ -1,6 +1,6 @@
-package com.baeldung.books.repositories;
+package org.github.homehub.repositories;
 
-import com.baeldung.books.models.MetricData;
+import org.github.homehub.models.MetricData;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

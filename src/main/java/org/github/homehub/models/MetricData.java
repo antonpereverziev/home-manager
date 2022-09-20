@@ -1,8 +1,9 @@
-package com.baeldung.books.models;
+package org.github.homehub.models;
 
 import lombok.Data;
 
 import javax.persistence.*;
+import java.time.ZonedDateTime;
 import java.util.Date;
 
 @Entity
@@ -16,13 +17,13 @@ public class MetricData {
     private long id;
 
     @Column(nullable = false)
-    @JoinColumn(name = "d_value")
-    private long value;
+    @JoinColumn(name = "value")
+    private double value;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_device")
     private Device device;
 
-    @Column(name="date_time")
-    private Date dateTime;
+    @Column(name="timestamp")
+    private ZonedDateTime dateTime;
 }

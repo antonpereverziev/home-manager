@@ -1,4 +1,4 @@
-package com.baeldung.books.config;
+package org.github.homehub.config;
 
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerFactory;
