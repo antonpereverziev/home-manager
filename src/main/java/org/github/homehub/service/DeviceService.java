@@ -19,7 +19,7 @@ public class DeviceService {
         device.setAccount(savedAccountInfo);
         device.setModel(deviceItem.getProductModel());
         device.setName(deviceItem.getName());
-        device.setType(deviceItem.getType());
+        device.setType("");
         device.setSerialNumber(deviceItem.getId());
         device.setTimeZoneId("Europe/Kiev");
         deviceRepository.save(device);
