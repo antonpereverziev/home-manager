@@ -4,13 +4,12 @@ import org.github.homehub.ewelink.api.model.devices.DeviceItem;
 import org.github.homehub.models.AccountInfo;
 import org.github.homehub.models.Device;
 import org.github.homehub.repositories.DeviceRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class DeviceService {
 
-    @Autowired
+    //@Autowired
     private DeviceRepository deviceRepository;
 
     public void createAndSaveDevice(AccountInfo savedAccountInfo, DeviceItem deviceItem) {

@@ -4,7 +4,6 @@ import org.github.homehub.models.Device;
 import org.github.homehub.models.MetricData;
 import org.github.homehub.repositories.DeviceRepository;
 import org.github.homehub.repositories.MetricRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,10 +14,10 @@ import java.time.ZonedDateTime;
 @Component
 public class MetricService {
 
-    @Autowired
+    //@Autowired
     private DeviceRepository deviceRepository;
 
-    @Autowired
+    //@Autowired
     private MetricRepository metricRepository;
 
     @Transactional
